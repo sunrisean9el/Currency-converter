@@ -30,7 +30,7 @@ const optionsTemplate = (data) => {
 };
 
 const importValuesFromAPI = () => {
-  const url = "http://api.nbp.pl/api/exchangerates/tables/a/";
+  const url = "https://api.nbp.pl/api/exchangerates/tables/a/";
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
