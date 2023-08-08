@@ -50,13 +50,12 @@ const showResult = (event) => {
   event.preventDefault();
   const value = currencyAmount.valueAsNumber;
   const result = currencyToPLN();
-  if (result != 0) {
+  if (result > 0) {
     currencyInfo.textContent = `To ${result} PLN.`;
   } else if (value === "") {
     currencyInfo.textContent = "Wpisz kwotę złotówek aby przeliczyć walutę.";
   } else {
-    currencyInfo.textContent =
-      "Wpisana kwota wynosi 0. Sprawdź wprowadzoną wartość.";
+    currencyInfo.textContent = "Wpisana kwota musi być większa od zera.";
   }
 };
 
