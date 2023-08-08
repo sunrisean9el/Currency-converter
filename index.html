@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converter</title>
+    <script
+      src="https://kit.fontawesome.com/a63259a33c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <i class="logo fa-solid fa-money-bill-transfer"></i>
+      <h1 class="title">PRZELICZNIK WALUT</h1>
+      <form>
+        <input type="number" id="currency-amount" />
+        <select id="currency-select"></select>
+        <button id="submit-btn">Przelicz</button>
+      </form>
+      <p id="converted-currency-info"></p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+html {
+  min-height: 100%;
+  background: linear-gradient(#fd5663, #ffb16d) no-repeat;
+}
+
+.container {
+  background-color: #fff;
+  width: 26em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 1em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 6em;
+  color: #fd5663;
+}
